@@ -1101,6 +1101,846 @@
       }
     }
 
+    .treat-hero {
+        background: linear-gradient(180deg, #f6fbff 0%, #ffffff 100%);
+        border-radius: 28px;
+        border: 1px dotted rgba(4, 99, 250, 0.22);
+        padding: 28px;
+        box-shadow: 0 18px 45px rgba(4, 99, 250, 0.08);
+        margin-bottom: 28px;
+    }
+
+    .treat-hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+        gap: 22px;
+        align-items: stretch;
+    }
+
+    .treat-hero-copy,
+    .treat-hero-aside,
+    .modern-panel,
+    .modern-card,
+    .modern-pricing,
+    .modern-reasons,
+    .modern-doctors,
+    .modern-cta {
+        border-radius: 24px;
+        border: 1px dotted rgba(4, 99, 250, 0.22);
+        background: #fff;
+        box-shadow: 0 16px 35px rgba(4, 99, 250, 0.08);
+    }
+
+    .treat-hero-copy {
+        padding: 30px;
+        background: linear-gradient(135deg, rgba(4, 99, 250, 0.96) 0%, rgba(3, 94, 235, 0.9) 100%);
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .treat-hero-copy::after {
+        content: '';
+        position: absolute;
+        inset: auto -60px -60px auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .treat-hero-badge,
+    .section-badge,
+    .cta-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px dotted rgba(255, 255, 255, 0.5);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+    }
+
+    .section-badge {
+        background: rgba(4, 99, 250, 0.08);
+        border-color: rgba(4, 99, 250, 0.22);
+        color: #0463fa;
+    }
+
+    .treat-hero-copy h2 {
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        line-height: 1.15;
+        margin: 18px 0 14px;
+        color: #fff;
+    }
+
+    .treat-hero-copy p,
+    .treat-hero-note {
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    .treat-hero-copy p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        max-width: 760px;
+    }
+
+    .treat-hero-points {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 22px 0;
+    }
+
+    .treat-point {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 14px 15px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px dotted rgba(255, 255, 255, 0.32);
+        min-height: 76px;
+    }
+
+    .treat-point strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .treat-point span {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    .treat-hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .treat-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 22px;
+        border-radius: 999px;
+        font-weight: 700;
+        border: 1px solid transparent;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .treat-btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .treat-btn.primary {
+        background: #fff;
+        color: #0463fa;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+    }
+
+    .treat-btn.secondary {
+        background: transparent;
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+    }
+
+    .treat-hero-aside {
+        padding: 20px;
+        background: linear-gradient(180deg, #ffffff 0%, #f4f9ff 100%);
+    }
+
+    .hero-stat-grid {
+        display: grid;
+        gap: 14px;
+    }
+
+    .hero-stat {
+        padding: 18px;
+        border-radius: 20px;
+        background: #fff;
+        border: 1px dotted rgba(4, 99, 250, 0.22);
+    }
+
+    .hero-stat strong {
+        display: block;
+        color: #0463fa;
+        font-size: 1.15rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-stat span {
+        color: #4b5563;
+        line-height: 1.6;
+    }
+
+    .modern-section {
+        padding: 26px 16px 8px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(1.7rem, 3vw, 2.55rem);
+        margin: 14px 0 12px;
+        color: #0f172a;
+    }
+
+    .section-subtitle {
+        max-width: 860px;
+        margin: 0 auto;
+        color: #566070;
+        line-height: 1.8;
+        font-size: 1.02rem;
+    }
+
+    .video-panel {
+        padding: 22px;
+        overflow: hidden;
+    }
+
+    .video-panel .video-wrapper {
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px dotted rgba(4, 99, 250, 0.2);
+    }
+
+    .video-panel .video-info {
+        margin-top: 18px;
+        background: #f5faff;
+        border-radius: 18px;
+        padding: 18px;
+        border: 1px dotted rgba(4, 99, 250, 0.18);
+        color: #334155;
+    }
+
+    .video-panel .video-description {
+        color: #334155;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    .comparison-grid,
+    .problem-grid,
+    .reason-grid,
+    .doctor-grid,
+    .cta-grid {
+        display: grid;
+        gap: 18px;
+    }
+
+    .comparison-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+        justify-content: center;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .comparison-card-shell,
+    .problem-card,
+    .reason-card,
+    .doctor-card,
+    .cta-card {
+        background: #fff;
+        border-radius: 24px;
+        border: 1px dotted rgba(4, 99, 250, 0.24);
+        box-shadow: 0 14px 32px rgba(4, 99, 250, 0.08);
+        overflow: hidden;
+    }
+
+    .comparison-card-shell {
+        padding: 18px;
+        width: 100%;
+        max-width: 390px;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .comparison-meta {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .comparison-meta strong {
+        display: block;
+        color: #0463fa;
+        margin-bottom: 6px;
+        font-size: 1.08rem;
+    }
+
+    .comparison-meta span,
+    .comparison-caption,
+    .problem-card p,
+    .reason-card p,
+    .doctor-card p,
+    .cta-card p {
+        color: #5b6472;
+        line-height: 1.7;
+    }
+
+    .comparison-caption {
+        margin: 12px 2px 0;
+        font-size: 0.96rem;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        min-height: 280px;
+        border-radius: 22px;
+        box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
+        border: 1px dotted rgba(4, 99, 250, 0.22);
+        background: #09111f;
+        position: relative;
+        overflow: hidden;
+        user-select: none;
+        touch-action: none;
+        aspect-ratio: 4 / 3;
+    }
+
+    .card::before {
+        content: 'Before';
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 12;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card::after {
+        content: 'After';
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        z-index: 12;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(4, 99, 250, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .card .before-img,
+    .card .after-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .after-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+        will-change: clip-path;
+        box-shadow: inset -8px 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .card .handle {
+        width: 8px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #ffffff 0%, #e5efff 100%);
+        box-shadow: 0 0 0 4px rgba(4, 99, 250, 0.2);
+    }
+
+    .card .handle::before,
+    .card .handle::after {
+        width: 18px;
+        height: 18px;
+        border-color: #0463fa;
+    }
+
+    .problem-grid,
+    .reason-grid,
+    .doctor-grid,
+    .cta-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+        justify-content: center;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .problem-card,
+    .reason-card,
+    .doctor-card,
+    .cta-card {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .problem-icon,
+    .reason-icon,
+    .doctor-avatar,
+    .cta-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        border: 1px dotted rgba(4, 99, 250, 0.24);
+        background: linear-gradient(135deg, rgba(4, 99, 250, 0.1), rgba(4, 99, 250, 0.04));
+        color: #0463fa;
+        margin-bottom: 14px;
+        margin-inline: auto;
+    }
+
+    .problem-card h3,
+    .reason-card h3,
+    .doctor-card h3,
+    .cta-card h3 {
+        color: #0f172a;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .pricing-shell {
+        padding: 0;
+    }
+
+    .pricing-glass-section {
+        position: relative;
+        margin: 12px auto 0;
+        padding: 34px 18px 28px;
+        max-width: 1240px;
+        border-radius: 32px;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at top left, rgba(66, 153, 225, 0.24), transparent 28%),
+            radial-gradient(circle at top right, rgba(255, 200, 87, 0.18), transparent 22%),
+            linear-gradient(180deg, #07111f 0%, #050b14 100%);
+        box-shadow: 0 28px 60px rgba(1, 6, 18, 0.35);
+    }
+
+    .pricing-glass-section::before,
+    .pricing-glass-section::after {
+        content: '';
+        position: absolute;
+        inset: auto auto 0 0;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.04);
+        filter: blur(12px);
+        pointer-events: none;
+    }
+
+    .pricing-glass-section::after {
+        inset: 18px 18px auto auto;
+        width: 180px;
+        height: 180px;
+        background: rgba(74, 144, 226, 0.09);
+    }
+
+    .pricing-glass-shell {
+        position: relative;
+        z-index: 1;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .pricing-glass-heading {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #fff;
+    }
+
+    .pricing-glass-heading .section-badge {
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(255, 255, 255, 0.18);
+        color: #dce9ff;
+    }
+
+    .pricing-glass-heading h2 {
+        color: #f8fbff;
+    }
+
+    .pricing-glass-heading .section-subtitle {
+        color: rgba(226, 236, 255, 0.78);
+    }
+
+    .pricing-glass-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .pricing-glass-card {
+        position: relative;
+        padding: 26px 24px 24px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.08));
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow:
+            0 18px 40px rgba(0, 0, 0, 0.24),
+            0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+        color: #eef4ff;
+        overflow: hidden;
+        font-family: 'Poppins', 'Inter', 'Segoe UI', sans-serif;
+    }
+
+    .pricing-glass-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 55%);
+        pointer-events: none;
+    }
+
+    .pricing-glass-card.economy {
+        border-color: rgba(205, 127, 50, 0.42);
+        box-shadow: 0 18px 40px rgba(205, 127, 50, 0.12), 0 0 28px rgba(205, 127, 50, 0.15);
+    }
+
+    .pricing-glass-card.standard {
+        transform: translateY(-8px);
+        border-color: rgba(120, 179, 255, 0.48);
+        box-shadow: 0 22px 48px rgba(74, 144, 226, 0.18), 0 0 34px rgba(74, 144, 226, 0.22);
+    }
+
+    .pricing-glass-card.premium {
+        border-color: rgba(255, 208, 96, 0.48);
+        box-shadow: 0 18px 40px rgba(255, 208, 96, 0.12), 0 0 30px rgba(255, 208, 96, 0.16);
+    }
+
+    .pricing-glass-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.09);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #f7fbff;
+    }
+
+    .pricing-glass-badge i {
+        font-size: 1.05rem;
+    }
+
+    .pricing-glass-card.economy .pricing-glass-badge i {
+        color: #cd7f32;
+    }
+
+    .pricing-glass-card.standard .pricing-glass-badge i {
+        color: #cfd8e6;
+    }
+
+    .pricing-glass-card.premium .pricing-glass-badge i {
+        color: #f4c542;
+    }
+
+    .pricing-glass-price {
+        margin: 18px 0 4px;
+        font-size: clamp(2rem, 4vw, 3.1rem);
+        font-weight: 800;
+        line-height: 1.02;
+        color: #ffffff;
+    }
+
+    .pricing-glass-subprice {
+        display: block;
+        margin-top: 8px;
+        font-size: 0.98rem;
+        font-weight: 500;
+        color: rgba(230, 240, 255, 0.86);
+    }
+
+    .pricing-glass-features {
+        list-style: none;
+        padding: 0;
+        margin: 22px 0 22px;
+        display: grid;
+        gap: 12px;
+    }
+
+    .pricing-glass-features li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 12px 14px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.07);
+        color: #edf4ff;
+        line-height: 1.5;
+    }
+
+    .pricing-glass-features i {
+        margin-top: 3px;
+        font-size: 1rem;
+    }
+
+    .pricing-glass-card.economy .pricing-glass-features i {
+        color: #39d353;
+    }
+
+    .pricing-glass-card.standard .pricing-glass-features i {
+        color: #5ca8ff;
+    }
+
+    .pricing-glass-card.premium .pricing-glass-features i {
+        color: #f4c542;
+    }
+
+    .pricing-glass-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 13px 18px;
+        border-radius: 999px;
+        border: 0;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+        color: #07111f;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.72));
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .pricing-glass-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.03);
+    }
+
+    .pricing-glass-card.economy .pricing-glass-action {
+        box-shadow: 0 0 0 1px rgba(205, 127, 50, 0.32) inset, 0 12px 24px rgba(205, 127, 50, 0.16);
+    }
+
+    .pricing-glass-card.standard .pricing-glass-action {
+        box-shadow: 0 0 0 1px rgba(92, 168, 255, 0.36) inset, 0 12px 24px rgba(92, 168, 255, 0.18);
+    }
+
+    .pricing-glass-card.premium .pricing-glass-action {
+        box-shadow: 0 0 0 1px rgba(244, 197, 66, 0.34) inset, 0 12px 24px rgba(244, 197, 66, 0.18);
+    }
+
+    .pricing-glass-ribbon {
+        position: absolute;
+        top: 20px;
+        right: -44px;
+        padding: 9px 50px;
+        transform: rotate(38deg);
+        background: linear-gradient(135deg, #ffe082, #f4c542);
+        color: #1e1a10;
+        font-size: 0.88rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        box-shadow: 0 10px 24px rgba(244, 197, 66, 0.26);
+    }
+
+    .pricing-note-wrap {
+        margin-top: 20px;
+        display: grid;
+        gap: 16px;
+        color: #f4f8ff;
+    }
+
+    .pricing-alert {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 18px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(255, 74, 74, 0.22), rgba(255, 74, 74, 0.12));
+        border: 1px solid rgba(255, 96, 96, 0.42);
+        box-shadow: 0 14px 30px rgba(255, 74, 74, 0.16);
+    }
+
+    .pricing-alert svg {
+        flex: 0 0 auto;
+        width: 22px;
+        height: 22px;
+        margin-top: 2px;
+        color: #ff6b6b;
+    }
+
+    .pricing-alert p {
+        margin: 0;
+        line-height: 1.75;
+        color: #ffecec;
+        font-weight: 600;
+    }
+
+    .support-policy {
+        padding: 20px 20px 18px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+    }
+
+    .support-policy h3 {
+        margin: 0 0 10px;
+        color: #ffffff;
+        font-size: 1.35rem;
+        font-weight: 800;
+    }
+
+    .support-policy p {
+        margin: 0;
+        color: rgba(235, 243, 255, 0.92);
+        line-height: 1.8;
+        font-size: 1.02rem;
+    }
+
+    .support-policy ul {
+        margin: 14px 0 0;
+        padding-left: 18px;
+        color: rgba(235, 243, 255, 0.9);
+        line-height: 1.8;
+    }
+
+    .support-policy li + li {
+        margin-top: 8px;
+    }
+
+    .why-panel,
+    .doctor-panel,
+    .cta-panel {
+        padding: 22px;
+    }
+
+    .why-panel .row,
+    .cta-panel .row {
+        align-items: stretch;
+    }
+
+    .doctor-card {
+        text-align: center;
+    }
+
+    .doctor-avatar {
+        overflow: hidden;
+    }
+
+    .doctor-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cta-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+        justify-content: center;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .cta-card {
+        text-align: center;
+    }
+
+    .cta-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 14px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        background: #0463fa;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .cta-action.alt {
+        background: #fff;
+        color: #0463fa;
+        border: 1px solid rgba(4, 99, 250, 0.22);
+    }
+
+    @media (max-width: 991px) {
+        .comparison-grid,
+        .problem-grid,
+        .reason-grid,
+        .doctor-grid,
+        .cta-grid,
+        .cards-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .pricing-glass-section {
+            padding: 24px 14px 18px;
+        }
+
+        .pricing-glass-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .pricing-glass-card.standard {
+            transform: none;
+        }
+
+        .video-panel,
+        .pricing-table-shell,
+        .why-panel,
+        .doctor-panel,
+        .cta-panel {
+            padding: 16px;
+        }
+
+        .treat-btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .comparison-card-shell,
+        .problem-card,
+        .reason-card,
+        .doctor-card,
+        .cta-card {
+            padding: 16px;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -1146,27 +1986,20 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0 text-primary">
-    
             <img src="img/logo-removebg-preview.png" alt="" width="80px">
-        
             </h1>
         </a>
-       
+
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="navbarCollapse">
-
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-
-          
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                 <a href="appointment.html" class="nav-item nav-link">Appointment</a>
-                  <a href="team.html" class="nav-item nav-link">Our Doctors</a>
-               </i>
+                <a href="appointment.html" class="nav-item nav-link">Appointment</a>
+                <a href="team.html" class="nav-item nav-link">Our Doctors</a>
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0">
@@ -1177,921 +2010,488 @@
                         <a href="Scaling-and-Polishing.html" class="dropdown-item">স্কেলিং+পলিশিং</a>
                         <a href="Tooth-Replacement.html" class="dropdown-item">নতুন দাঁত লাগানো</a>
                         <a href="Dental-Extraction.html" class="dropdown-item">দাঁত তোলা</a>
-                       
                     </div>
-              
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="https://wa.me/8801611112717" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
-    
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
-           
+            <h1 class="display-3 text-white mb-3 animated slideInDown">ফাঁকা দাঁতের চিকিৎসা</h1>
         </div>
     </div>
     <!-- Page Header End -->
 
+                <section class="modern-section">
+                    <div class="section-heading">
+                        <span class="section-badge">🎬 কম্পোজিট ভিনিয়ার - ধাপে ধাপে পুরো প্রক্রিয়া</span>
+                        <h2>ভিডিওতে দেখুন কীভাবে চিকিৎসা হয়</h2>
+                        <p class="section-subtitle">বর্তমান ভিডিওটাই ব্যবহার করা হয়েছে, তবে এখন thumbnail visible থাকবে যাতে visitor প্রথম দেখাতেই content বুঝতে পারেন।</p>
+                    </div>
 
-<div class="service-main-container">
-    <div class="service-header-area">
-        <span class="service-badge">🦷 কম্পোজিট ভিনিয়ার ট্রিটমেন্ট  </span>
-       
-        <p class="service-description">প্রতিটি দাঁতের ফাঁকা বন্ধের খরচ
-ব্যবহৃত মান ও ম্যাটেরিয়ালের উপর নির্ভর করে।
-আপনার জন্য উপযুক্ত ভিনিয়ারটি বেছে নিন।
-</p>
+                    <div class="video-panel modern-panel">
+                        <div class="video-container">
+                            <div class="video-header">
+                                <div class="video-title">Composite Veneer – ধাপে ধাপে পুরো প্রক্রিয়া</div>
+                                <div class="video-controls">
+                                    <button class="control-btn"><i class="fas fa-expand-arrows-alt"></i></button>
+                                    <button class="control-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="animated-border"></div>
+
+                            <div class="video-wrapper">
+                                <video class="video-player" id="mainVideo" poster="img/file_00000000347871fab96f8a03b3d48ece.png">
+                                    <source src="video/SocialVideo_1757763454449.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <div class="custom-controls">
+                                <div class="progress-container" id="progressContainer">
+                                    <div class="progress-bar" id="progressBar"></div>
+                                </div>
+
+                                <div class="time-controls">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">0:00</span>
+                                </div>
+
+                                <div class="main-controls">
+                                    <div class="left-controls">
+                                        <button class="play-pause" id="playPause">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+
+                                        <div class="volume-control">
+                                            <button class="control-btn" id="volumeBtn">
+                                                <i class="fas fa-volume-up"></i>
+                                            </button>
+                                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="right-controls">
+                                        <div class="playback-speed">
+                                            <select class="speed-select" id="speedSelect">
+                                                <option value="0.5">0.5x</option>
+                                                <option value="1" selected>1x</option>
+                                                <option value="1.5">1.5x</option>
+                                                <option value="2">2x</option>
+                                            </select>
+                                        </div>
+
+                                        <button class="fullscreen-btn" id="fullscreenBtn">
+                                            <i class="fas fa-expand"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-description">ফাঁকা বা অসমান দাঁতের সমস্যায় জটিল চিকিৎসা লাগে না। Composite Veneer দিয়ে ন্যাচারাল লুক, টেকসই ফলাফল এবং আসল দাঁতের কোনো কাটাছেঁড়া বা রক্তপাত ছাড়াই চিকিৎসা করা যায়।</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="modern-section">
+                    <div class="section-heading">
+                        <span class="section-badge">🦷 Before / After</span>
+                        <h2>আমাদের কিছু সফল Smile Transformation</h2>
+                        <p class="section-subtitle">নিচের ছবিগুলো আমাদের কিছু রোগীর চিকিৎসার আগে ও পরের ফলাফল। প্রতিটি রোগীর সমস্যা ও প্রয়োজন অনুযায়ী treatment করা হয়েছে।</p>
+                    </div>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card-shell">
+                            <div class="comparison-meta">
+                                <div>
+                                    <strong>Case 01</strong>
+                                    <span>ফাঁকা দাঁত ও front line balance</span>
+                                </div>
+                            </div>
+                            <div class="card" data-before="img/BEFORE1.jpg" data-after="img/AFTER1.jpg"></div>
+                            <p class="comparison-caption">চিকিৎসার আগে / পরে</p>
+                        </div>
+
+                        <div class="comparison-card-shell">
+                            <div class="comparison-meta">
+                                <div>
+                                    <strong>Case 02</strong>
+                                    <span>shape correction এবং cleaner smile</span>
+                                </div>
+                            </div>
+                            <div class="card" data-before="img/BEFORE2.jpg" data-after="img/AFTER2.jpg"></div>
+                            <p class="comparison-caption">চিকিৎসার আগে / পরে</p>
+                        </div>
+
+                        <div class="comparison-card-shell">
+                            <div class="comparison-meta">
+                                <div>
+                                    <strong>Case 03</strong>
+                                    <span>stain cover এবং fresh finish</span>
+                                </div>
+                            </div>
+                            <div class="card" data-before="img/BEFORE3.jpg" data-after="img/AFTER3.jpg"></div>
+                            <p class="comparison-caption">চিকিৎসার আগে / পরে</p>
+                        </div>
+
+                        <div class="comparison-card-shell">
+                            <div class="comparison-meta">
+                                <div>
+                                    <strong>Case 04</strong>
+                                    <span>quick aesthetic enhancement</span>
+                                </div>
+                            </div>
+                            <div class="card" data-before="img/aa111.jpg" data-after="img/b111.jpg"></div>
+                            <p class="comparison-caption">চিকিৎসার আগে / পরে</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="modern-section">
+                    <div class="section-heading">
+                        <span class="section-badge">🧩 Problems We Solve</span>
+                        <h2>ফাঁকা দাঁত নিয়ে যে সমস্যাগুলো আমরা সমাধান করি</h2>
+                        <p class="section-subtitle">Shape correction, gap correction, smile balancing আর fast aesthetic improvement এর জন্য এই treatment সবচেয়ে practical option হতে পারে।</p>
+                    </div>
+
+                    <div class="problem-grid">
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.76 0 5 2.24 5 5 0 1.7-.84 3.18-2.12 4.08.78 1.17 1.12 2.56 1.12 3.92 0 2.76-1.79 7-4 7s-4-4.24-4-7c0-1.36.34-2.75 1.12-3.92A4.97 4.97 0 0 1 7 7c0-2.76 2.24-5 5-5Zm0 2C10.35 4 9 5.35 9 7s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3Z"/></svg></div>
+                            <h3>Shape Correction</h3>
+                            <p>দাঁতের আকৃতি বা edge uneven থাকলে smile-এর overall look সুন্দরভাবে balance করা যায়।</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></svg></div>
+                            <h3>Gap Closing</h3>
+                            <p>সামনের দাঁতের ফাঁকা জায়গা বন্ধ করে more compact এবং natural look আনা যায়।</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m21 7-9 9-5-5 1.41-1.41L12 13.17l7.59-7.59L21 7ZM5 19h14v2H5v-2Z"/></svg></div>
+                            <h3>Broken / Chipped Teeth</h3>
+                            <p>ছোট ভাঙা অংশ, chipped edge বা worn front teeth-এর aesthetic repair করা যায়।</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9Zm0 2c3.86 0 7 3.14 7 7 0 1.28-.35 2.47-.94 3.5l-2.48-2.48-1.41 1.41 2.46 2.46A6.98 6.98 0 0 1 12 19c-3.86 0-7-3.14-7-7s3.14-7 7-7Z"/></svg></div>
+                            <h3>Uneven Smile Line</h3>
+                            <p>Smile line-এর mismatch হলে front teeth-কে clean alignment-এর মতো দেখানো যায়।</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 3 21h18L12 2Zm0 4.77L18.05 19H5.95L12 6.77ZM11 10h2v5h-2v-5Zm0 6h2v2h-2v-2Z"/></svg></div>
+                            <h3>Stain Cover</h3>
+                            <p>দাঁতের surface stains বা color mismatch কম visually noticeable করা যায়।</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6H4V4h16v2Zm0 4H4v4h16v-4Zm-6 6H4v2h10v-2Z"/></svg></div>
+                            <h3>Fast Smile Upgrade</h3>
+                            <p>যারা কম সময়ে noticeable improvement চান, তাদের জন্য এটি খুবই practical solution।</p>
+                        </div>
+                    </div>
+
+                    <div class="treat-hero-actions" style="justify-content:center; margin-top:20px;">
+                        <a class="treat-btn primary" href="https://wa.me/8801611112717" target="_blank"><i class="fab fa-whatsapp"></i> আপনার দাঁতের ছবি পাঠান</a>
+                    </div>
+                </section>
+
+                <section class="modern-section pricing-glass-section">
+                    <div class="pricing-glass-shell">
+                        <div class="pricing-glass-heading">
+                            <span class="section-badge">💳 Pricing</span>
+                            <h2>ফাঁকা দাঁতের Pricing</h2>
+                            <p class="section-subtitle">Dark, frosted glass cards with distinct bronze, silver, and gold tiers for quick comparison.</p>
+                        </div>
+
+                        <div class="pricing-glass-grid">
+                            <article class="pricing-glass-card economy">
+                                <div class="pricing-glass-badge"><i class="fas fa-medal"></i> Economy Package</div>
+                                <div class="pricing-glass-price">৳ 3,000</div>
+                                <span class="pricing-glass-subprice">৩,০০০ টাকা, প্রতি ফাকা দাঁতের জন্য<br>3,000 Taka, per missing tooth</span>
+
+                                <ul class="pricing-glass-features">
+                                    <li><i class="fas fa-check-circle"></i><span>6-Month Service Support</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>1-Time Complimentary Correction</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>Budget Friendly Option</span></li>
+                                </ul>
+
+                                <a class="pricing-glass-action" href="https://wa.me/8801611112717" target="_blank">Choose Economy</a>
+                            </article>
+
+                            <article class="pricing-glass-card standard">
+                                <div class="pricing-glass-ribbon">Most Popular</div>
+                                <div class="pricing-glass-badge"><i class="fas fa-medal"></i> Standard Package</div>
+                                <div class="pricing-glass-price">৳ 4,500</div>
+                                <span class="pricing-glass-subprice">Balanced quality with strong value</span>
+
+                                <ul class="pricing-glass-features">
+                                    <li><i class="fas fa-check-circle"></i><span>12-Month Service Support</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>1-Time Complimentary Correction</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>Most Popular Choice</span></li>
+                                </ul>
+
+                                <a class="pricing-glass-action" href="appointment.html">Choose Standard</a>
+                            </article>
+
+                            <article class="pricing-glass-card premium">
+                                <div class="pricing-glass-badge"><i class="fas fa-medal"></i> Premium Package</div>
+                                <div class="pricing-glass-price">৳ 6,000</div>
+                                <span class="pricing-glass-subprice">Best finish and elevated smile result</span>
+
+                                <ul class="pricing-glass-features">
+                                    <li><i class="fas fa-check-circle"></i><span>24-Month Service Support</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>2-Time Complimentary Correction</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>Enhanced Aesthetic Finish</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span>Priority Support</span></li>
+                                </ul>
+
+                                <a class="pricing-glass-action" href="https://wa.me/8801611112717" target="_blank">Choose Premium</a>
+                            </article>
+                        </div>
+
+                        <div class="pricing-note-wrap">
+                            <div class="pricing-alert" role="alert" aria-live="polite">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M1 21h22L12 2 1 21Zm12-3h-2v-2h2v2Zm0-4h-2v-4h2v4Z"/>
+                                </svg>
+                                <p>*উল্লিখিত খরচ একেকটি ফাঁকা দাঁত বন্ধ করার জন্য প্রযোজ্য।</p>
+                            </div>
+
+                            <div class="support-policy">
+                                <h3>Service Support Policy:</h3>
+                                <p>Service Support Period-এর মধ্যে Veneer-এ কোনো Clinical Issue বা Minor Defect দেখা দিলে Clinical Evaluation-এর ভিত্তিতে Complimentary Correction Support প্রদান করা হবে।</p>
+                                <ul>
+                                    <li>দুর্ঘটনা, আঘাত, শক্ত বস্তু কামড়ানো, দাঁত ঘষার অভ্যাস (Bruxism), Oral Hygiene অবহেলা বা অনুপযুক্ত ব্যবহারের কারণে সৃষ্ট ক্ষতির ক্ষেত্রে এই সুবিধা প্রযোজ্য নয়।</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="modern-section">
+                    <div class="section-heading">
+                        <span class="section-badge">🌟 Why Afiya Dental Care</span>
+                        <h2>কেনো আমাদের বেছে নিবেন?</h2>
+                        <p class="section-subtitle">আফিয়া ডেন্টাল কেয়ারের লক্ষ্য শুধু treatment দেওয়া নয়, বরং patient-specific care, modern technology আর trusted outcome নিশ্চিত করা।</p>
+                    </div>
+
+                    <div class="reason-grid">
+                        <div class="reason-card">
+                            <div class="reason-icon"><i class="fas fa-user-check"></i></div>
+                            <h3>Personalized Care</h3>
+                            <p>প্রতিটি রোগীর সুবিধা-অসুবিধা, expectation আর comfort level আলাদা করে দেখা হয়।</p>
+                        </div>
+                        <div class="reason-card">
+                            <div class="reason-icon"><i class="fas fa-microscope"></i></div>
+                            <h3>Modern Technology</h3>
+                            <p>আধুনিক যন্ত্রপাতি, উন্নত material আর safe environment-এ treatment দেওয়া হয়।</p>
+                        </div>
+                        <div class="reason-card">
+                            <div class="reason-icon"><i class="fas fa-user-md"></i></div>
+                            <h3>Experienced Team</h3>
+                            <p>অভিজ্ঞ dentist team প্রতিটি ধাপে detail-এ নজর রাখে, যাতে result হয় clean আর consistent।</p>
+                        </div>
+                        <div class="reason-card">
+                            <div class="reason-icon"><i class="fas fa-wallet"></i></div>
+                            <h3>Value for Money</h3>
+                            <p>মান বজায় রেখে affordable treatment plan দেওয়া হয়, যাতে quality-তে compromise না হয়।</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="modern-section">
+                    <div class="section-heading">
+                        <span class="section-badge">🧑‍⚕️ Dentists List</span>
+                        <h2>আমাদের বিশেষ ডাক্তার সমূহ</h2>
+                        <p class="section-subtitle">আফিয়া ডেন্টাল কেয়ার সর্বদাই আপনার সেবায় প্রস্তুত।</p>
+                    </div>
+
+                    <div class="doctor-grid">
+                        <div class="doctor-card">
+                            <div class="doctor-avatar"><img src="img/about.jpg" alt="Tuhin Ahmed"></div>
+                            <h3>Tuhin Ahmed</h3>
+                            <p>CEO & Founder. Diploma in Medical Technology (Dental). Field Training at Shaheed Suhrawardy Medical College & Hospital. CPR (Birdem Medical College).</p>
+                        </div>
+                        <div class="doctor-card">
+                            <div class="doctor-avatar"><img src="img/dentistfarin.png" alt="Dr. Farin Rahman"></div>
+                            <h3>Dr. Farin Rahman</h3>
+                            <p>Dentist. BDS (DU), PGT (Conservative Dentistry and Endodontics), Dhaka Dental College and Hospital. BMDC Reg: 15528.</p>
+                        </div>
+                        <div class="doctor-card">
+                            <div class="doctor-avatar"><img src="img/tas.jpg" alt="Tashmin Akter"></div>
+                            <h3>Tashmin Akter</h3>
+                            <p>Dentist. DDT (IHT Jehenaidh). Field Training – Chottogram Medical College Hospital. B.Sc. on Dentistry (CMU, ongoing).</p>
+                        </div>
+                        <div class="doctor-card">
+                            <div class="doctor-avatar"><img src="img/mahafu.jpg" alt="Md Mahafuj"></div>
+                            <h3>Md Mahafuj</h3>
+                            <p>Dentist. B.Sc. (H.T.) in Dentistry, Dhaka University. D.T.M. in Dentistry (B.S.M.F.). M.Sc. in Nutrition, Islamic University.</p>
+                        </div>
+                    </div>
+                </section>
+<div class="container">
+  <h1>কম্পোজিট ভিনিয়ার সম্পর্কে FAQ</h1>
+  <div class="faq-container">
+    <div class="faq-header">কম্পোজিট ভিনিয়ার সম্পর্কে কিছু সাধারণ প্রশ্ন ও উত্তর:</div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ার কি?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ার হল দাঁতের সামনে লাগানোর একটি পাতলা প্রলেপ যা কম্পোজিট রেসিন material দিয়ে তৈরি। এটি দাঁতের রং, আকার বা দৈর্ঘ্য উন্নত করতে ব্যবহার করা হয়। এটি সরাসরি দাঁতে প্রয়োগ করা হয় এবং ডেন্টিস্ট এটি শেপ ও পলিশ করে প্রাকৃতিক দাঁতের মতো দেখাতে পারেন।</p>
+      </div>
     </div>
-    
-   
-    
- 
-
-  <div class="package-table">
-    <h1 class="title"></h1>
-    <p class="subtitle"></p>
-
-    <table>
-      <thead>
-        
-
-        <tr>
-          <th>কোয়ালিটি</th>
-          <th>দাম</th>
-          <th>টেকসই</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="কোয়ালিটি">
-            <span class="quality premium">
-                
-              <!-- 🏆 Trophy Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M16 2v2h3v3c0 3.31-2.69 6-6 6s-6-2.69-6-6V4h3V2h6zm-1 14.93V22H9v-5.07A8.001 8.001 0 0112 6c1.85 0 3.55.63 4.9 1.69L15 10.59V9h-2V7h4v4h-2v-1.59l1.1 1.1A7.962 7.962 0 0117 13c0 1.48-.4 2.87-1 4.07z"/>
-              </svg>
-              Premium Quality
-            </span>
-          </td>
-          <td data-label="দাম">
-            <span class="price">
-              <!-- 💰 Coin Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 2c4.962 0 9 4.038 9 9s-4.038 9-9 9-9-4.038-9-9 4.038-9 9-9z"/>
-              </svg>
-              6,000 টাকা
-            </span>
-          </td>
-          <td data-label="টেকসই">১০–১৫ বছর</td>
-        </tr>
-
-        <tr>
-          <td data-label="কোয়ালিটি">
-            <span class="quality medium">
-              <!-- ⭐ Star Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2l2.39 7.26H22l-6.19 4.5L17.64 22 12 17.77 6.36 22l1.83-8.24L2 9.26h7.61z"/>
-              </svg>
-              Medium Quality
-            </span>
-          </td>
-          <td data-label="দাম">
-            <span class="price">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 2c4.962 0 9 4.038 9 9s-4.038 9-9 9-9-4.038-9-9 4.038-9 9-9z"/>
-              </svg>
-              4,500 টাকা
-            </span>
-          </td>
-          <td data-label="টেকসই">৫–৭ বছর</td>
-        </tr>
-
-        <tr>
-          <td data-label="কোয়ালিটি">
-            <span class="quality regular">
-              <!-- 💡 Bulb Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 21h6v2H9v-2zm3-20C7.48 1 3 5.48 3 11c0 3.53 1.94 6.61 4.8 8.27L9 22h6l1.2-2.73C19.06 17.61 21 14.53 21 11c0-5.52-4.48-10-9-10z"/>
-              </svg>
-              Regular Quality
-            </span>
-          </td>
-          <td data-label="দাম">
-            <span class="price">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 2c4.962 0 9 4.038 9 9s-4.038 9-9 9-9-4.038-9-9 4.038-9 9-9z"/>
-              </svg>
-              3,000 টাকা
-            </span>
-          </td>
-          <td data-label="টেকসই">৩–৫ বছর</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="faq-item">
+      <div class="faq-question">কাদের জন্য কম্পোজিট ভিনিয়ার উপযুক্ত?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ার নিম্নলিখিত ব্যক্তিদের জন্য উপযুক্ত:</p>
+        <ul>
+          <li>দাঁতের রং পরিবর্তন করতে চাইলে</li>
+          <li>দাঁতের মধ্যে ছোট ফাঁক থাকলে</li>
+          <li>ভাঙা বা চিপড দাঁত থাকলে</li>
+          <li>দাঁতের আকৃতি অস্বাভাবিক হলে</li>
+          <li>হালকা থেকে মাঝারি crookedness ঠিক করতে</li>
+          <li>যারা porcelain veneers এর সস্তা বিকল্প খুঁজছেন</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ারের সুবিধা কি কি?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ারের অনেক সুবিধা রয়েছে:</p>
+        <ul>
+          <li>প্রাকৃতিক দাঁতের মতো দেখায়</li>
+          <li>একটি non-invasive পদ্ধতি (কম দাঁত কাটা প্রয়োজন)</li>
+          <li>সাধারণত মাত্র এক appointment এ সম্পন্ন করা যায়</li>
+          <li>পোরসেলিন ভিনিয়ারের তুলনায় কম ব্যয়বহুল</li>
+          <li>সামান্য damage হলে সহজে repair করা যায়</li>
+          <li>বিভিন্ন রং available, প্রাকৃতিক দাঁতের সাথে match করা যায়</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ারের অসুবিধা কি কি?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ারের কিছু সীমাবদ্ধতাও রয়েছে:</p>
+        <ul>
+          <li>পোরসেলিন ভিনিয়ারের তুলনায় কম স্থায়ী (৫-৭ বছর)</li>
+          <li>দাগ প্রতিরোধী নয়, কফি, চা, ওয়াইন ইত্যাদি থেকে দাগ হতে পারে</li>
+          <li>পোরসেলিনের তুলনায় কম শক্তিশালী</li>
+          <li>সময়ের সাথে পরিবর্তিত হতে পারে</li>
+          <li>নিয়মিত পলিশিং প্রয়োজন</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ারের যত্ন কিভাবে নিতে হয়?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ারের দীর্ঘস্থায়ীতা বজায় রাখতে:</p>
+        <ul>
+          <li>নিয়মিত ব্রাশ ও ফ্লস করুন</li>
+          <li>অ্যালকোহল-মুক্ত mouthwash ব্যবহার করুন</li>
+          <li>দাঁত grinding এড়িয়ে চলুন, প্রয়োজন হলে night guard ব্যবহার করুন</li>
+          <li>কড়া বা শক্ত খাবার কামড়ানো এড়িয়ে চলুন</li>
+          <li>ধূমপান এড়িয়ে চলুন</li>
+          <li>নিয়মিত ডেন্টাল চেকআপ করুন</li>
+          <li>প্রতি ৬ মাসে professional polishing করান</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর আগে কি কি করতে হবে?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ার লাগানোর আগে:</p>
+        <ul>
+          <li>ডেন্টিস্টের সাথে পরামর্শ করুন</li>
+          <li>আপনার প্রত্যাশা নিয়ে আলোচনা করুন</li>
+          <li>দাঁতের সম্পূর্ণ পরীক্ষা করান</li>
+          <li>প্রয়োজন হলে dental cleaning করান</li>
+          <li>কোনো dental সমস্যা (যেমন cavity, gum disease) থাকলে আগে treatment করান</li>
+          <li>ভিনিয়ারের রং নির্বাচন করুন</li>
+          <li>খরচ এবং treatment plan সম্পর্কে জানুন</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর পর কি কি করতে হবে?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ার লাগানোর পরে:</p>
+        <ul>
+          <li>প্রথম ২৪ ঘন্টা staining foods এবং beverages এড়িয়ে চলুন</li>
+          <li>প্রথম কয়েক দিন নরম খাবার খান</li>
+          <li>নির্দেশিত oral hygiene routine অনুসরণ করুন</li>
+          <li>কড়া খাবার কামড়ানো এড়িয়ে চলুন</li>
+          <li>নখ, কলম বা অন্য কোনো কঠিন জিনিস কামড়ানো এড়িয়ে চলুন</li>
+          <li>নিয়মিত ডেন্টাল ভিজিট বজায় রাখুন</li>
+          <li>কোনো সমস্যা দেখা দিলে সঙ্গে সঙ্গে ডেন্টিস্টকে জানান</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ার কতদিন স্থায়ী হয়?</div>
+      <div class="faq-answer">
+        <p>সঠিক যত্ন নিলে কম্পোজিট ভিনিয়ার সাধারণত <span class="highlight">৫ থেকে ৭ বছর</span> স্থায়ী হয়। তবে কিছু ক্ষেত্রে এটি ১০ বছর পর্যন্তও স্থায়ী হতে পারে। এর স্থায়িত্ব নির্ভর করে:</p>
+        <ul>
+          <li>ব্যক্তির oral hygiene habit এর উপর</li>
+          <li>খাদ্যাভ্যাস (staining foods এবং hard foods খাওয়া)</li>
+          <li>দাঁত grinding বা clenching করা</li>
+          <li>ডেন্টিস্টের দক্ষতা এবং ব্যবহৃত materials এর মানের উপর</li>
+          <li>নিয়মিত maintenance এবং professional care</li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর পর কি কি খাওয়া যাবে না?</div>
+      <div class="faq-answer">
+        <p>কম্পোজিট ভিনিয়ার লাগানোর পর নিম্নলিখিত খাবার ও পানীয় সীমিত করা উচিত:</p>
+        <ul>
+          <li class="warning">কফি এবং চা</li>
+          <li class="warning">রেড ওয়াইন</li>
+          <li class="warning">সোডা এবং কলা</li>
+          <li class="warning">বেরি (ব্লুবেরি, রাস্পবেরি, ব্ল্যাকবেরি)</li>
+          <li class="warning">সয়া সস এবং কেচাপ</li>
+          <li class="warning">কারি এবং হলুদ</li>
+          <li class="warning">আইসকিউব বা অন্যান্য শক্ত বস্তু</li>
+          <li class="warning">স্টিকি ক্যান্ডি এবং ক্যারামেল</li>
+        </ul>
+        <p>এইসব খাবার খাওয়ার পর সঙ্গে সঙ্গে পানি দিয়ে কুলি করুন বা ব্রাশ করুন।</p>
+      </div>
+    </div>
   </div>
-
- 
-
-
-
-
-
-
-  <!-- video -->
-
-
-
-  <div class="video-container">
-        <div class="video-header">
-            <div class="video-title"> Composite Veneer – ধাপে ধাপে পুরো প্রক্রিয়া</div>
-            <div class="video-controls">
-                <button class="control-btn"><i class="fas fa-expand-arrows-alt"></i></button>
-                <button class="control-btn"><i class="fas fa-times"></i></button>
-            </div>
-        </div>
-        
-        <div class="animated-border"></div>
-        
-        <div class="video-wrapper">
-            <video class="video-player" id="mainVideo">
-                <source src="video/SocialVideo_1757763454449.mp4" type="video/mp4">
-             
-            </video>
-        </div>
-        
-        <div class="custom-controls">
-            <div class="progress-container" id="progressContainer">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            
-            <div class="time-controls">
-                <span id="currentTime">0:00</span>
-                <span id="duration">0:00</span>
-            </div>
-            
-            <div class="main-controls">
-                <div class="left-controls">
-                    <button class="play-pause" id="playPause">
-                        <i class="fas fa-play"></i>
-                    </button>
-                    
-                    <div class="volume-control">
-                        <button class="control-btn" id="volumeBtn">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.01" value="1">
-                    </div>
-                </div>
-                
-                <div class="right-controls">
-                    <div class="playback-speed">
-                        <select class="speed-select" id="speedSelect">
-                            <option value="0.5">0.5x</option>
-                            <option value="1" selected>1x</option>
-                            <option value="1.5">1.5x</option>
-                            <option value="2">2x</option>
-                        </select>
-                    </div>
-                    
-                    <button class="fullscreen-btn" id="fullscreenBtn">
-                        <i class="fas fa-expand"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="video-info">
-            <p class="video-description">
-                
-
-            ফাঁকা বা অসমান দাঁতের সমস্যায় জটিল চিকিৎসা লাগে না। Composite Veneer দিয়ে ন্যাচারাল লুক, 
-            টেকসই ফলাফল এবং আসল দাঁতের কোন কাটাছেঁড়া বা রক্তপাত ছাড়াই চিকিৎসা করা যায়।
-
-            </p>
-            
-        </div>
-        
-      
-
-
-    </div>
-
-
- <div class="service-header-area">
-        <span class="service-badge">🦷 আগে ও পরের কিছু পার্থক্য </span>
-       
-        <p class="service-description">
-</p>
-    </div>
-
-
-<div class="cards-container">
-  <div class="card" data-before="img\AFTER1.jpg" data-after="img\BEFORE1.jpg"></div>
-  <div class="card" data-before="img\aa222.jpg" data-after="img/b222.jpg"></div>
-  <div class="card" data-before="img/aa333.jpg" data-after="img/b333.jpg"></div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        
-        <div class="warranty-section">
-
-              
-            <h2 class="warranty-header">
-                <span class="service-badge">🦷 Veneer Warranty Policy </span>
-            </h2>
-            
-            <!-- Premium Warranty -->
-            <div class="warranty-item">
-                <div class="warranty-title">
-                    <span class="warranty-icon"><i class="fas fa-crown"></i></span>
-                    Premium Quality Veneer
-                </div>
-                <div class="warranty-content">
-                    <div class="warranty-text">
-                        <h4>বাংলা</h4>
-                        <p>ভবিষ্যতে যেকোনো সময় ভিনিয়ার ভেঙে গেলে বা নষ্ট হলে, রোগী <strong>একবার ফ্রি সার্ভিস</strong> পাবেন।</p>
-                    </div>
-                    <div class="warranty-text">
-                        <h4>English</h4>
-                        <p>In case of damage or failure at any point in the future, patients will receive <strong>one-time free repair or replacement</strong> service.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Medium Warranty -->
-            <div class="warranty-item">
-                <div class="warranty-title">
-                    <span class="warranty-icon"><i class="fas fa-star"></i></span>
-                    Medium Quality Veneer
-                </div>
-                <div class="warranty-content">
-                    <div class="warranty-text">
-                        <h4>বাংলা</h4>
-                        <p>সাধারণত কোনো ওয়ারেন্টি নেই, তবে প্রয়োজনে স্বল্প খরচে রিপেয়ার করা যাবে।</p>
-                    </div>
-                    <div class="warranty-text">
-                        <h4>English</h4>
-                        <p>No standard warranty. However, repair or replacement can be provided at a minimal cost if required.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Regular Warranty -->
-            <div class="warranty-item">
-                <div class="warranty-title">
-                    <span class="warranty-icon"><i class="fas fa-lightbulb"></i></span>
-                    Regular Quality Veneer
-                </div>
-                <div class="warranty-content">
-                    <div class="warranty-text">
-                        <h4>বাংলা</h4>
-                        <p>কোনো ওয়ারেন্টি নেই, তবে প্রয়োজনে রিপেয়ার/রিপ্লেসমেন্ট করা যাবে।</p>
-                    </div>
-                    <div class="warranty-text">
-                        <h4>English</h4>
-                        <p>No warranty. Repair or replacement is possible upon request with applicable charges.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="notes-section">
-            <h2 class="notes-header">Extra Notes</h2>
-            <ul class="notes-list">
-                <li>বাংলা: ওয়ারেন্টি শুধু ভিনিয়ারের কাজের জন্য, দাঁতের নিজস্ব সমস্যার জন্য নয়।<br>
-                    English: Warranty covers veneer-related issues only, not natural tooth conditions.</li>
-                <li>বাংলা: ডাক্তারের নির্দেশনা না মানলে বা দাঁত দিয়ে শক্ত জিনিস কামড়ালে ওয়ারেন্টি প্রযোজ্য হবে না।<br>
-                    English: Negligence or misuse (such as biting on hard objects) voids the warranty.</li>
-            </ul>
-        </div>
+<section class="modern-section">
+    <div class="section-heading">
+        <span class="section-badge">📞 CTA</span>
+        <h2>এখনই কল করুন অথবা appointment নিন</h2>
+        <p class="section-subtitle">চিকিৎসা শুরু করার আগে আপনার দাঁতের ছবি WhatsApp-এ পাঠান, অথবা সরাসরি call করে appointment confirm করুন।</p>
     </div>
 
-
-
-
-
-
-
-
-
-
-
- <!-- questionns -->
-
-         <div class="container">
-        <h1>কম্পোজিট ভিনিয়ার সম্পর্কে FAQ</h1>
-        
-        <div class="faq-container">
-            <div class="faq-header">কম্পোজিট ভিনিয়ার সম্পর্কে কিছু সাধারণ প্রশ্ন ও উত্তর:</div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ার কি?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ার হল দাঁতের সামনে লাগানোর একটি পাতলা প্রলেপ যা কম্পোজিট রেসিন material দিয়ে তৈরি। এটি দাঁতের রং, আকার বা দৈর্ঘ্য উন্নত করতে ব্যবহার করা হয়। এটি সরাসরি দাঁতে প্রয়োগ করা হয় এবং ডেন্টিস্ট এটি শেপ ও পলিশ করে প্রাকৃতিক দাঁতের মতো দেখাতে পারেন।</p>
-              </div>
+    <div class="cta-panel modern-cta">
+        <div class="cta-grid">
+            <div class="cta-card">
+                <div class="cta-icon"><i class="fab fa-whatsapp"></i></div>
+                <h3>WhatsApp</h3>
+                <p>দাঁতের ছবি, সমস্যা আর আপনার প্রশ্ন একসাথে পাঠান।</p>
+                <a class="cta-action" href="https://wa.me/8801611112717" target="_blank"><i class="fab fa-whatsapp"></i> এখনই চ্যাট করুন</a>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কাদের জন্য কম্পোজিট ভিনিয়ার উপযুক্ত?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ার নিম্নলিখিত ব্যক্তিদের জন্য উপযুক্ত:</p>
-                <ul>
-                  <li>দাঁতের রং পরিবর্তন করতে চাইলে</li>
-                  <li>দাঁতের মধ্যে ছোট ফাঁক থাকলে</li>
-                  <li>ভাঙা বা চিপড দাঁত থাকলে</li>
-                  <li>দাঁতের আকৃতি অস্বাভাবিক হলে</li>
-                  <li>হালকা থেকে মাঝারি crookedness ঠিক করতে</li>
-                  <li>যারা porcelain veneers এর সস্তা বিকল্প খুঁজছেন</li>
-                </ul>
-              </div>
+            <div class="cta-card">
+                <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
+                <h3>Call Now</h3>
+                <p>সরাসরি কথা বলে দ্রুত appointment schedule করুন।</p>
+                <a class="cta-action alt" href="tel:+8801611112717"><i class="fas fa-phone-alt"></i> এখনই কল করুন</a>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ারের সুবিধা কি কি?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ারের অনেক সুবিধা রয়েছে:</p>
-                <ul>
-                  <li>প্রাকৃতিক দাঁতের মতো দেখায়</li>
-                  <li>একটি non-invasive পদ্ধতি (কম দাঁত কাটা প্রয়োজন)</li>
-                  <li>সাধারণত মাত্র এক appointment এ সম্পন্ন করা যায়</li>
-                  <li>পোরসেলিন ভিনিয়ারের তুলনায় কম ব্যয়বহুল</li>
-                  <li>সামান্য damage হলে সহজে repair করা যায়</li>
-                  <li>বিভিন্ন রং available, প্রাকৃতিক দাঁতের সাথে match করা যায়</li>
-                </ul>
-              </div>
+            <div class="cta-card">
+                <div class="cta-icon"><i class="fas fa-calendar-check"></i></div>
+                <h3>Appointment</h3>
+                <p>আপনার সুবিধামতো সময় বেছে নিয়ে visit confirm করুন।</p>
+                <a class="cta-action" href="appointment.html"><i class="fas fa-calendar-check"></i> Appointment বুক করুন</a>
             </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ারের অসুবিধা কি কি?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ারের কিছু সীমাবদ্ধতাও রয়েছে:</p>
-                <ul>
-                  <li>পোরসেলিন ভিনিয়ারের তুলনায় কম স্থায়ী (৫-৭ বছর)</li>
-                  <li>দাগ প্রতিরোধী নয়, কফি, চা, ওয়াইন ইত্যাদি থেকে দাগ হতে পারে</li>
-                  <li>পোরসেলিনের তুলনায় কম শক্তিশালী</li>
-                  <li>সময়ের সাথে পরিবর্তিত হতে পারে</li>
-                  <li>নিয়মিত পলিশিং প্রয়োজন</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ারের যত্ন কিভাবে নিতে হয়?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ারের দীর্ঘস্থায়ীতা বজায় রাখতে:</p>
-                <ul>
-                  <li>নিয়মিত ব্রাশ ও ফ্লস করুন</li>
-                  <li>অ্যালকোহল-মুক্ত mouthwash ব্যবহার করুন</li>
-                  <li>দাঁত grinding এড়িয়ে চলুন, প্রয়োজন হলে night guard ব্যবহার করুন</li>
-                  <li>কড়া বা শক্ত খাবার কামড়ানো এড়িয়ে চলুন</li>
-                  <li>ধূমপান এড়িয়ে চলুন</li>
-                  <li>নিয়মিত ডেন্টাল চেকআপ করুন</li>
-                  <li>প্রতি ৬ মাসে professional polishing করান</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর আগে কি কি করতে হবে?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ার লাগানোর আগে:</p>
-                <ul>
-                  <li>ডেন্টিস্টের সাথে পরামর্শ করুন</li>
-                  <li>আপনার প্রত্যাশা নিয়ে আলোচনা করুন</li>
-                  <li>দাঁতের সম্পূর্ণ পরীক্ষা করান</li>
-                  <li>প্রয়োজন হলে dental cleaning করান</li>
-                  <li>কোনো dental সমস্যা (যেমন cavity, gum disease) থাকলে আগে treatment করান</li>
-                  <li>ভিনিয়ারের রং নির্বাচন করুন</li>
-                  <li>খরচ এবং treatment plan সম্পর্কে জানুন</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর পর কি কি করতে হবে?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ার লাগানোর পরে:</p>
-                <ul>
-                  <li>প্রথম ২৪ ঘন্টা staining foods এবং beverages এড়িয়ে চলুন</li>
-                  <li>প্রথম কয়েক দিন নরম খাবার খান</li>
-                  <li>নির্দেশিত oral hygiene routine অনুসরণ করুন</li>
-                  <li>কড়া খাবার কামড়ানো এড়িয়ে চলুন</li>
-                  <li>নখ, কলম বা অন্য কোনো কঠিন জিনিস কামড়ানো এড়িয়ে চলুন</li>
-                  <li>নিয়মিত ডেন্টাল ভিজিট বজায় রাখুন</li>
-                  <li>কোনো সমস্যা দেখা দিলে সঙ্গে সঙ্গে ডেন্টিস্টকে জানান</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ার কতদিন স্থায়ী হয়?</div>
-              <div class="faq-answer">
-                <p>সঠিক যত্ন নিলে কম্পোজিট ভিনিয়ার সাধারণত <span class="highlight">৫ থেকে ৭ বছর</span> স্থায়ী হয়। তবে কিছু ক্ষেত্রে এটি ১০ বছর পর্যন্তও স্থায়ী হতে পারে। এর স্থায়িত্ব নির্ভর করে:</p>
-                <ul>
-                  <li>ব্যক্তির oral hygiene habit এর উপর</li>
-                  <li>খাদ্যাভ্যাস (staining foods এবং hard foods খাওয়া)</li>
-                  <li>দাঁত grinding বা clenching করা</li>
-                  <li>ডেন্টিস্টের দক্ষতা এবং ব্যবহৃত materials এর মানের উপর</li>
-                  <li>নিয়মিত maintenance এবং professional care</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">কম্পোজিট ভিনিয়ার লাগানোর পর কি কি খাওয়া যাবে না?</div>
-              <div class="faq-answer">
-                <p>কম্পোজিট ভিনিয়ার লাগানোর পর নিম্নলিখিত খাবার ও পানীয় সীমিত করা উচিত:</p>
-                <ul>
-                  <li class="warning">কফি এবং চা</li>
-                  <li class="warning">রেড ওয়াইন</li>
-                  <li class="warning">সোডা এবং কলা</li>
-                  <li class="warning">বেরি (ব্লুবেরি, রাস্পবেরি, ব্ল্যাকবেরি)</li>
-                  <li class="warning">সয়া সস এবং কেচাপ</li>
-                  <li class="warning">কারি এবং হলুদ</li>
-                  <li class="warning">আইসকিউব বা অন্যান্য শক্ত বস্তু</li>
-                  <li class="warning">স্টিকি ক্যান্ডি এবং ক্যারামেল</li>
-                </ul>
-                <p>এইসব খাবার খাওয়ার পর সঙ্গে সঙ্গে পানি দিয়ে কুলি করুন বা ব্রাশ করুন।</p>
-              </div>
-            </div>
-
-           
-
         </div>
     </div>
-
-
-
-
-
-
-
-<!-- appoinment -->
-
-
-<div class="apt-section-container">
-    <div class="apt-main-title">
-        <h2>আপনার অ্যাপয়েন্টমেন্ট বুক করুন</h2>
-        <p>আমাদের টিমের সাথে অ্যাপয়েন্টমেন্ট বুক করার জন্য আপনার পছন্দের মাধ্যমটি বেছে নিন</p>
-    </div>
-
-    <div class="apt-options-wrapper">
-        <!-- WhatsApp Option -->
-        <div class="apt-option-card">
-            <div class="apt-icon-container">
-                <i class="fab fa-whatsapp"></i>
-            </div>
-            <h3 class="apt-option-title">WhatsApp এর মাধ্যমে বুকিং</h3>
-            <p class="apt-option-desc">দ্রুত অ্যাপয়েন্টমেন্ট বুকিং এবং তাৎক্ষণিক প্রতিক্রিয়ার জন্য সরাসরি WhatsApp এ আমাদের বার্তা পাঠান।</p>
-            <a href="https://wa.me/8801611112717" class="apt-action-button" target="_blank">
-                <i class="fab fa-whatsapp"></i> এখনি চ্যাট করুন
-            </a>
-        </div>
-
-        <!-- Phone Call Option -->
-        <div class="apt-option-card">
-            <div class="apt-icon-container">
-                <i class="fas fa-phone"></i>
-            </div>
-            <h3 class="apt-option-title">সরাসরি ফোন করুন</h3>
-            <p class="apt-option-desc">ব্যক্তিগতকৃত বুকিং সহায়তার জন্য আমাদের অ্যাপয়েন্টমেন্ট সমন্বয়কারীর সাথে কথা বলুন।</p>
-            <a href="tel:+880 1611-112717" class="apt-action-button">
-                <i class="fas fa-phone"></i> এখনি কল করুন
-            </a>
-        </div>
-
-        <!-- Email Option -->
-        <div class="apt-option-card">
-            <div class="apt-icon-container">
-                <i class="fas fa-envelope"></i>
-            </div>
-            <h3 class="apt-option-title">ইমেইল পাঠান</h3>
-            <p class="apt-option-desc">আপনার পছন্দের তারিখ এবং সময় সহ আমাদের একটি ইমেইল পাঠান, এবং আমরা আপনার অ্যাপয়েন্টমেন্ট নিশ্চিত করব।</p>
-            <a href="mailto:afiyadentalcare@gmail.com?subject=Appointment Request" class="apt-action-button">
-                <i class="fas fa-envelope"></i> ইমেইল পাঠান
-            </a>
-        </div>
-    </div>
-
-   
-</div>
-    <!-- Appointment End -->
-
-
-
-
-
-
-
-    <!-- Testimonial Start -->
-     
-    
-<div class="revv1">
-    <div class="revv18">
-        <div class="revv19"></div>
-        <div class="revv19"></div>
-        <div class="revv19"></div>
-        <div class="revv19"></div>
-        <div class="revv19"></div>
-    </div>
-
-    <div class="revv2">
-       
-
-
-
-<div class="apt-main-title">
-        <h2>আমাদের রোগীদের কিছু মূল্যবান মতামত</h2>
-       
-    </div>
-
-
-
-
-
-
-        <section class="revv7">
-            <!-- Review 1 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Rahman Khan</h3>
-                        <p>Teeth Whitening</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আফিয়া ডেন্টাল কেয়ারে আমার দাঁত সাদা করার ট্রিটমেন্ট করিয়েছি এবং ফলাফল অসাধারণ! স্টাফরা খুবই প্রফেশনাল এবং পুরো প্রসিডিউর জুড়ে আমাকে স্বাচ্ছন্দ্য বোধ করিয়েছেন। অত্যন্ত সুপারিশকৃত!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Fatima Begum</h3>
-                        <p>Dental Implants</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"বছরখানেক ডেন্চার নিয়ে অস্বস্তির পর আফিয়ায় ডেন্টাল ইমপ্লান্ট করিয়েছি। ডাঃ আহমেদ অসাধারণ - প্রসিডিউরটি সম্পূর্ণ ব্যথাহীন এবং ফলাফল জীবনবদলানো। এখন আত্মবিশ্বাসের সাথে খেতে এবং হাসতে পারছি!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Shamsul Alam</h3>
-                        <p>Root Canal Treatment</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="revv15">"রুট ক্যানাল ট্রিটমেন্ট নিয়ে আমি ভয় পেয়েছিলাম, কিন্তু আফিয়া ডেন্টালের টিম অভিজ্ঞতাটিকে আশ্চর্যজনকভাবে আরামদায়ক করে তুলেছে। প্রসিডিউরটি দ্রুত শেষ হয়েছে এবং পরে আমার কোনো ব্যথা হয়নি। আপনার চমৎকার যত্নের জন্য ধন্যবাদ!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 4 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Nusrat Jahan</h3>
-                        <p>Braces Treatment</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার মেয়ে আফিয়া ডেন্টালে তার ব্রেসেস ট্রিটমেন্ট সম্পন্ন করেছে এবং আমরা ফলাফল নিয়ে উত্তেজিত। অর্থোডন্টিস্ট খুবই ধৈর্যশীল ছিলেন এবং সবকিছু স্পষ্টভাবে বুঝিয়ে দিয়েছেন। পেমেন্ট প্ল্যানগুলো আমাদের জন্য সাশ্রয়ী করে তুলেছে।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 5 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Kamal Hossain</h3>
-                        <p>Regular Checkup</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমি আমার নিয়মিত চেকআপের জন্য ৩ বছরেরও বেশি সময় ধরে আফিয়া ডেন্টালে আসছি। হাইজিন স্ট্যান্ডার্ডগুলো চমৎকার এবং ডেন্টিস্টরা সবসময় সবকিছু বুঝিয়ে বলতে সময় নেন। তারা আমাকে নিখুঁত ওরাল হেলথ বজায় রাখতে সাহায্য করেছে।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 6 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Sabrina Akter</h3>
-                        <p>Dental Crowns</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="revv15">"একটি দুর্ঘটনার পর আমার সামনের দুটি দাঁতে ডেন্টাল ক্রাউন প্রয়োজন ছিল। আফিয়ার টিম রঙ পুরোপুরি মেলাতে অবিশ্বাস্য কাজ করেছে। কেউ বলতে পারবে না যে এগুলো আমার প্রাকৃতিক দাঁত নয়। খুবই প্রফেশনাল সার্ভিস!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 7 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Rahim Uddin</h3>
-                        <p>Tooth Extraction</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার একটি দাঁত তুলতে হয়েছিল এবং আমি খুব ভয় পেয়েছিলাম। কিন্তু আফিয়া ডেন্টালে ডাক্তার সাহেব এমন দক্ষতার সাথে দাঁতটি তুললেন যে আমি টেরও পাইনি কখন দাঁতটি বের হয়ে গেছে। কোনো ব্যথা লাগেনি একদম!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 8 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Jahanara Islam</h3>
-                        <p>Dental Cleaning</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"প্রতি ছয় মাস পর পর আমি আফিয়া ডেন্টালে ডেন্টাল ক্লিনিং করাই। তাদের পরিষ্কার-পরিচ্ছন্নতা এবং স্টেরিলাইজেশন প্রক্রিয়া দেখে আমি খুবই সন্তুষ্ট। দাঁত পরিষ্কার করার পর মনে হয় নতুন দাঁতের মতো!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 9 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Mohammad Ali</h3>
-                        <p>Dentures</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"বয়সের কারণে আমার প্রায় সব দাঁতই পড়ে গিয়েছিল। আফিয়া ডেন্টালে ডেন্চার তৈরি করিয়েছি যা দেখতে একদম প্রাকৃতিক দাঁতের মতো। এখন আমি আত্মবিশ্বাসের সাথে হাসতে এবং খেতে পারছি। ধন্যবাদ আফিয়া ডেন্টাল কেয়ারকে!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 10 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Sharmin Akter</h3>
-                        <p>Tooth Filling</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার একটি দাঁতে ক্যাভিটি ছিল এবং ফিলিং করার প্রয়োজন ছিল। আফিয়া ডেন্টালে সাদা ফিলিং করিয়েছি যা দেখতে একদম প্রাকৃতিক দাঁতের মতো। কেউ বলতে পারবে না যে দাঁতে ফিলিং করা হয়েছে। দামও খুব যুক্তিসঙ্গত।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 11 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Abdul Karim</h3>
-                        <p>Gum Treatment</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="revv15">"আমার মাড়ি দিয়ে রক্ত পড়ার সমস্যা ছিল অনেকদিন ধরে। আফিয়া ডেন্টালে গাম ট্রিটমেন্ট নিয়েছি এবং এখন সম্পূর্ণ সুস্থ হয়ে গেছি। ডাক্তার সাহেব খুবই ভালোভাবে ট্রিটমেন্ট করেছেন এবং মাড়ির যত্ন নেওয়ার উপায় শিখিয়ে দিয়েছেন।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 12 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Nasrin Sultana</h3>
-                        <p>Child Dentistry</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার ছেলের দাঁতের সমস্যা নিয়ে আফিয়া ডেন্টালে এসেছিলাম। পেডিয়াট্রিক ডেন্টিস্ট ভাইয়া এত ভালোভাবে বাচ্চাকে হ্যান্ডেল করেছেন যে আমার ছেলে একটুও ভয় পায়নি। বাচ্চাদের জন্য আলাদা ওয়েটিং এরিয়া এবং খেলনার ব্যবস্থা আছে যা খুবই ভালো লেগেছে।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 13 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Farid Ahmed</h3>
-                        <p>Wisdom Tooth Removal</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার উইজডম টুথের সমস্যা ছিল এবং অপারেশন করার প্রয়োজন ছিল। আফিয়া ডেন্টালে সার্জারি করিয়েছি এবং পুরো প্রক্রিয়া খুবই স্মুথলি সম্পন্ন হয়েছে। অপারেশন পরবর্তী কেয়ারও ছিল চমৎকার। ডাক্তার সাহেব নিয়মিত ফোন করে জিজ্ঞেস করছিলেন আমার অবস্থা।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 14 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Mousumi Rahman</h3>
-                        <p>Veneers</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"আমার সামনের দাঁতগুলোর শেপ ঠিক না থাকায় আমি ভিনিয়ার করিয়েছি আফিয়া ডেন্টালে। ফলাফল দেখে আমি নিজেই অবাক! দাঁতগুলো এখন একদম পারফেক্ট দেখাচ্ছে। সবাই জিজ্ঞেস করে আমার হাসি এত সুন্দর কিভাবে হলো। ধন্যবাদ আফিয়া ডেন্টাল টিমকে!"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-
-            <!-- Review 15 -->
-            <div class="revv8">
-                <div class="revv11">
-                    <div class="revv12">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="revv13">
-                        <h3>Shahidul Islam</h3>
-                        <p>Full Mouth Rehabilitation</p>
-                    </div>
-                </div>
-                <div class="revv14">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="revv15">"দীর্ঘদিন ধরে দাঁতের সমস্যায় ভুগছিলাম। আফিয়া ডেন্টালে ফুল মাউথ রিহ্যাবিলিটেশন করিয়েছি এবং এটি আমার জীবন বদলে দিয়েছে। এখন আমি যা খুশি খেতে পারি এবং আত্মবিশ্বাসের সাথে হাসতে পারি। পুরো টিমের প্রতি আমার অগাধ শ্রদ্ধা এবং কৃতজ্ঞতা।"</p>
-                <div class="revv17">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-            </div>
-            </div></div>
-        </section>
-
-    <!-- Testimonial End -->
+</section>
 
         
 
@@ -2301,14 +2701,16 @@
     cards.forEach(card => {
       const beforeSrc = card.getAttribute('data-before');
       const afterSrc = card.getAttribute('data-after');
+            card.style.touchAction = 'pan-y';
 
       // create before img
       const beforeImg = document.createElement('img');
       beforeImg.src = beforeSrc;
       beforeImg.classList.add('before-img');
       beforeImg.style.width = '100%';
-      beforeImg.style.height = 'auto';
+    beforeImg.style.height = '100%';
       beforeImg.style.objectFit = 'cover';
+            beforeImg.style.pointerEvents = 'none';
       card.appendChild(beforeImg);
 
       // after wrapper
@@ -2317,19 +2719,36 @@
       const afterImg = document.createElement('img');
       afterImg.src = afterSrc;
       afterImg.classList.add('after-img');
+    afterImg.style.pointerEvents = 'none';
       afterWrapper.appendChild(afterImg);
       card.appendChild(afterWrapper);
 
       // handle
       const handle = document.createElement('div');
       handle.classList.add('handle');
+    handle.style.touchAction = 'none';
       card.appendChild(handle);
 
       // interaction
       let dragging = false;
+            const updatePosition = (clientX) => {
+                const rect = card.getBoundingClientRect();
+                let x = clientX - rect.left;
+                if (x < 0) x = 0;
+                if (x > rect.width) x = rect.width;
+                const percent = (x / rect.width) * 100;
+                        afterWrapper.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0 100%)`;
+                handle.style.left = percent + '%';
+            };
+
+            updatePosition(card.getBoundingClientRect().left + card.getBoundingClientRect().width * 0.3);
 
       const startDrag = (e) => {
         dragging = true;
+                if (handle.setPointerCapture && e.pointerId !== undefined) {
+                    handle.setPointerCapture(e.pointerId);
+                }
+                updatePosition(e.clientX);
         e.preventDefault();
       };
       const stopDrag = () => {
@@ -2337,29 +2756,15 @@
       };
       const doDrag = (e) => {
         if (!dragging) return;
-        let rect = card.getBoundingClientRect();
-        let x;
-        if (e.touches) {
-          x = e.touches[0].clientX - rect.left;
-        } else {
-          x = e.clientX - rect.left;
-        }
-        if (x < 0) x = 0;
-        if (x > rect.width) x = rect.width;
-        let percent = x / rect.width * 100;
-        afterWrapper.style.width = percent + '%';
-        handle.style.left = percent + '%';
+                updatePosition(e.clientX);
       };
 
-      handle.addEventListener('mousedown', startDrag);
-      handle.addEventListener('touchstart', startDrag);
+            handle.addEventListener('pointerdown', startDrag);
 
-      window.addEventListener('mouseup', stopDrag);
-      window.addEventListener('touchend', stopDrag);
-      window.addEventListener('touchcancel', stopDrag);
+            window.addEventListener('pointerup', stopDrag);
+            window.addEventListener('pointercancel', stopDrag);
 
-      window.addEventListener('mousemove', doDrag);
-      window.addEventListener('touchmove', doDrag);
+            window.addEventListener('pointermove', doDrag);
     });
   });
 
