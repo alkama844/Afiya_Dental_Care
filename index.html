@@ -32,10 +32,180 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
      <style>
+/* Services Section - Design System Compliant */
+:root {
+  --primary-blue: #1a73e8;
+  --secondary-purple: #6c5ce7;
+  --dark-text: #2c3e50;
+  --light-gray: #666;
+  --border-radius: 16px;
+  --gap: 30px;
+}
 
+.services-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
 
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+}
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+  margin-bottom: 40px;
+}
+
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card-link:hover .service-card {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e8e8e8;
+}
+
+.service-card-top-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.service-icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(26, 115, 232, 0.25);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.service-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-top: 15px;
+  font-family: 'SolaimanLipi', 'Poppins', sans-serif;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+    min-height: 290px;
+  }
+
+  .service-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 40px 15px;
+  }
+
+  .services-title {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-card {
+    padding: 25px 15px;
+    min-height: 270px;
+  }
+
+  .service-card-title {
+    font-size: 1rem;
+  }
+}
+
+/* Accessibility */
+.service-card-link:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+.service-card-link:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+  </style>
 
 
 
@@ -207,197 +377,112 @@
 
 
   
-<div class="serG1">
-  <h2 class="serG2">আমাদের সেবা সমূহ</h2>
-  <div class="serG3">
-    <a href="treatment-of-missing-tooth.html">
-    <div class="serG4">
-      <div class="serG45"></div>
-      <div class="serG13">
-        <img src="img/fakadaat.png" alt="" height="80px" width="80px">
-      </div>
-      <div class="serG37">
-        <h4>ফাঁকা দাঁতের চিকিৎসা</h4>
-      </div>
-      <div class="serG21"></div>
-      
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="root-canal-treatment.html">
-    <div class="serG5">
-      <div class="serG46"></div>
-      <div class="serG14">
-         <img src="img/rootcc.png" alt="" height="80px" width="80px">
-      </div>
-      <div class="serG38">
-        <h4>রুট ক্যানেল চিকিৎসা</h4>
-      </div>
-      <div class="serG22"></div>
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="Dental-Filling.html">
-        <div class="serG6">
-      <div class="serG47"></div>
-      <div class="serG15">
-        <img src="img/dentalffff.png" height="80px" width="80px">
-      </div>
-      <div class="serG39">
-        <h4>ডেন্টাল ফিলিং</h4>
-      </div>
-      <div class="serG23"></div>
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="Orthodontic-treatment.html">
-    <div class="serG7">
-      <div class="serG48"></div>
-      <div class="serG16">
-        <img src="img/braces.png" height="60px" width="60px">
-      </div>
-      <div class="serG40">
-        <h6>আঁকা-বাঁকা দাঁতের চিকিৎসা</h6>
-      </div>
-      <div class="serG24"></div>
-  
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-<a href="Scaling-and-Polishing.html">
-    <div class="serG8">
-      <div class="serG49"></div>
-      <div class="serG17">
-        <img src="img/1111111111.png"  height="80px" width="80px">
-      </div>
-      <div class="serG41">
-        <h4>ক্লিনিং + পলিশিং</h4>
-      </div>
-      <div class="serG25"></div>
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="Tooth-Replacement.html">
-    <div class="serG9">
-      <div class="serG50"></div>
-      <div class="serG18">
-        <img src="img/newwwwdaat.png"  height="80px" width="80px">
-      </div>
-      <div class="serG42">
-        <h4>নতুন দাঁত লাগানো</h4>
-      </div>
-      <div class="serG26"></div>
-    </div>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-<a href="Dental-Extraction.html">
-    <div class="serG10">
-      <div class="serG51"></div>
-      <div class="serG19">
-       <img src="img/daaat toola.png"  height="80px" width="80px">
-      </div>
-      <div class="serG43">
-        <h6>দাঁত তোলা</h6>
-      </div>
-      <div class="serG27"></div>
-    </div>
-
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="https://www.facebook.com/afiyadentalcare">
-    <div class="serG11">
-      <div class="serG52"></div>
-      <div class="serG20">
-        <img src="img/follllow.png"  height="60px" width="60px">
-      </div>
-      <div class="serG44">
-        <h6>ফলো-আপ চেকআপ</h6>
-      </div>
-      <div class="serG28"></div>
+<!-- Services Section Start -->
+<section class="services-section">
+  <div class="services-container">
+    <h2 class="services-title">আমাদের সেবা সমূহ</h2>
+
+    <div class="services-grid">
+      <!-- Service Card 1: Missing Tooth Treatment -->
+      <a href="treatment-of-missing-tooth.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/fakadaat.png" alt="ফাঁকা দাঁত" class="service-icon">
+          </div>
+          <h3 class="service-card-title">ফাঁকা দাঁতের চিকিৎসা</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 2: Root Canal Treatment -->
+      <a href="root-canal-treatment.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/rootcc.png" alt="রুট ক্যানেল" class="service-icon">
+          </div>
+          <h3 class="service-card-title">রুট ক্যানেল চিকিৎসা</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 3: Dental Filling -->
+      <a href="Dental-Filling.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/dentalffff.png" alt="ডেন্টাল ফিলিং" class="service-icon">
+          </div>
+          <h3 class="service-card-title">ডেন্টাল ফিলিং</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 4: Orthodontic Treatment -->
+      <a href="Orthodontic-treatment.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/braces.png" alt="আঁকা-বাঁকা দাঁত" class="service-icon">
+          </div>
+          <h3 class="service-card-title">আঁকা-বাঁকা দাঁতের চিকিৎসা</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 5: Cleaning + Polishing -->
+      <a href="Scaling-and-Polishing.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/1111111111.png" alt="ক্লিনিং পলিশিং" class="service-icon">
+          </div>
+          <h3 class="service-card-title">ক্লিনিং + পলিশিং</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 6: Tooth Replacement -->
+      <a href="Tooth-Replacement.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/newwwwdaat.png" alt="নতুন দাঁত" class="service-icon">
+          </div>
+          <h3 class="service-card-title">নতুন দাঁত লাগানো</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 7: Dental Extraction -->
+      <a href="Dental-Extraction.html" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/daaat toola.png" alt="দাঁত তোলা" class="service-icon">
+          </div>
+          <h3 class="service-card-title">দাঁত তোলা</h3>
+        </div>
+      </a>
+
+      <!-- Service Card 8: Follow-up Checkup -->
+      <a href="https://www.facebook.com/afiyadentalcare" class="service-card-link">
+        <div class="service-card">
+          <div class="service-card-top-border"></div>
+          <div class="service-icon-container">
+            <img src="img/follllow.png" alt="ফলো-আপ চেকআপ" class="service-icon">
+          </div>
+          <h3 class="service-card-title">ফলো-আপ চেকআপ</h3>
+        </div>
+      </a>
     </div>
   </div>
-  </div>
-</a>
+</section>
+<!-- Services Section End -->
+
+
+
+
+
+
+
+
+
 <!-- before / after -->
 
 
